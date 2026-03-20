@@ -3,6 +3,10 @@ import { ShoppingCart, X, Plus, Minus, Send, ShoppingBag, Menu, Search, Instagra
 import { motion, AnimatePresence } from 'motion/react';
 import { PRODUCTS, Product } from './products';
 import heroImg from './hero.png';
+import retinolImg from './retinol.png';
+import hairdewImg from './hairdew.png';
+import hairgelImg from './hairgel.png';
+import vitaminImg from './vitamin.png';
 
 interface CartItem extends Product {
   quantity: number;
@@ -361,12 +365,12 @@ function LandingView({ onShopNow, onProductClick }: { onShopNow: () => void, onP
             </div>
             <div className="lg:col-span-7 grid grid-cols-2 gap-6">
               <div className="space-y-6 pt-12">
-                <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=600" alt="Kart 1" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
-                <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=600" alt="Kart 2" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
+                <img src={hairdewImg} alt="Kart 1" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
+                <img src={hairgelImg} alt="Kart 2" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
               </div>
               <div className="space-y-6">
-                <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=600" alt="Kart 3" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
-                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600" alt="Kart 4" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
+                <img src={vitaminImg} alt="Kart 3" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
+                <img src={retinolImg} alt="Kart 4" className="rounded-3xl shadow-xl" referrerPolicy="no-referrer" />
               </div>
             </div>
           </div>
