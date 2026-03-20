@@ -1,3 +1,7 @@
+import roseImg from './rose.png';
+import scrubImg from './scrub.png';
+import sunscreenImg from './sunscreen.png';
+
 export interface Product {
   id: string;
   name: string;
@@ -85,7 +89,7 @@ export const PRODUCTS: Product[] = [
     description: 'Non-greasy, broad-spectrum protection with a matte finish.',
     fullDescription: 'Protect your skin without the white cast. Our Mineral Sunscreen uses non-nano Zinc Oxide to provide powerful broad-spectrum protection against UVA and UVB rays. The lightweight, tinted formula blends seamlessly into all skin tones.',
     price: 550,
-    image: 'https://images.unsplash.com/photo-1598440441973-1675005af43e?auto=format&fit=crop&q=80&w=800',
+    image: sunscreenImg,
     variants: ['Tinted', 'Untinted'],
     ingredients: ['Zinc Oxide', 'Niacinamide', 'Green Tea', 'Vitamin E'],
     howToUse: 'Apply liberally 15 minutes before sun exposure. Reapply every 2 hours.',
@@ -111,7 +115,7 @@ export const PRODUCTS: Product[] = [
     description: 'Refreshing facial mist to balance and hydrate skin on the go.',
     fullDescription: 'A pure, steam-distilled rose water mist that instantly refreshes and hydrates. Perfect for setting makeup, balancing skin pH after cleansing, or providing a quick pick-me-up throughout the day.',
     price: 350,
-    image: 'https://images.unsplash.com/photo-1570194065650-d99fb4b3ceb1?auto=format&fit=crop&q=80&w=800',
+    image: roseImg,
     variants: ['100ml'],
     ingredients: ['Pure Rose Water', 'Witch Hazel', 'Glycerin', 'Rose Geranium Oil'],
     howToUse: 'Mist onto face and neck whenever skin feels dry or tight.',
@@ -150,7 +154,7 @@ export const PRODUCTS: Product[] = [
     description: 'Invigorating body scrub to smooth and firm skin.',
     fullDescription: 'Wake up your skin with the power of caffeine. Our Coffee Scrub uses organic Arabica grounds to buff away dead skin cells, while cold-pressed oils leave your body feeling incredibly soft and hydrated.',
     price: 350,
-    image: 'https://images.unsplash.com/photo-1608248547146-d7372f763b3b?auto=format&fit=crop&q=80&w=800',
+    image: scrubImg,
     variants: ['200g'],
     ingredients: ['Arabica Coffee Grounds', 'Coconut Oil', 'Brown Sugar', 'Sea Salt'],
     howToUse: 'Massage onto wet skin in circular motions. Leave for 2 minutes, then rinse.',

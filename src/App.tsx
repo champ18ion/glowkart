@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { ShoppingCart, X, Plus, Minus, Send, ShoppingBag, Menu, Search, Instagram, Twitter, Facebook, ArrowRight, Star, ShieldCheck, Leaf, Droplets, ChevronRight, ArrowLeft, Play, Quote } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PRODUCTS, Product } from './products';
+import heroImg from './hero.png';
 
 interface CartItem extends Product {
   quantity: number;
@@ -284,8 +285,8 @@ function LandingView({ onShopNow, onProductClick }: { onShopNow: () => void, onP
       {/* Hero */}
       <section className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1598440441973-1675005af43e?auto=format&fit=crop&q=80&w=1920" alt="Hero" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-          <div className="absolute inset-0 bg-brand-ink/20" />
+          <img src={heroImg} alt="Hero" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <div className="absolute inset-0 bg-brand-ink/40 backdrop-blur-sm" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left">
           <div className="max-w-2xl">
