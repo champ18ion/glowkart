@@ -1,6 +1,16 @@
 import roseImg from './rose.png';
 import scrubImg from './scrub.png';
 import sunscreenImg from './sunscreen.png';
+import botanicalImg from './botanical.png';
+import maskImg from './mask.png';
+import aloeImg from './aloe.png';
+import retinolImg from './retinol.png';
+import hairdewImg from './hairdew.png';
+import hairgelImg from './hairgel.png';
+import vitaminImg from './vitamin.png';
+import seasaltImg from './seasalt.png';
+import midnightImg from './midnight.png';
+
 
 export interface Product {
   id: string;
@@ -24,7 +34,7 @@ export const PRODUCTS: Product[] = [
     description: 'Infused with argan oil and vitamin E for frizz-free, shiny hair.',
     fullDescription: 'Our Silk Glow Hair Serum is a lightweight, non-greasy formula designed to transform dull, frizzy hair into a silky masterpiece. Enriched with pure Moroccan Argan Oil and Vitamin E, it provides an instant shine while protecting your hair from heat damage and environmental pollutants.',
     price: 499,
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800',
+    image: hairdewImg,
     variants: ['30ml', '50ml'],
     ingredients: ['Argan Oil', 'Vitamin E', 'Cyclopentasiloxane', 'Dimethicone'],
     howToUse: 'Apply 2-3 drops to damp or dry hair, focusing on the mid-lengths to ends. Do not rinse.',
@@ -37,7 +47,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lightweight gel-cream with hyaluronic acid for 24h hydration.',
     fullDescription: 'Experience the ultimate hydration with Hydra-Dew. This innovative gel-cream formula sinks into the skin instantly, delivering a burst of Hyaluronic Acid and Ceramide NP. It strengthens the skin barrier and locks in moisture for a plump, dewy complexion that lasts all day.',
     price: 650,
-    image: 'https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&q=80&w=800',
+    image: hairgelImg,
     variants: ['Normal Skin', 'Oily Skin'],
     ingredients: ['Hyaluronic Acid', 'Ceramides', 'Aloe Vera', 'Glycerin'],
     howToUse: 'Massage onto clean, dry face and neck morning and night.',
@@ -50,7 +60,7 @@ export const PRODUCTS: Product[] = [
     description: 'Sulfate-free formula to strengthen and nourish damaged hair.',
     fullDescription: 'Gently cleanse while repairing damaged strands with our Botanical Repair Shampoo. Formulated without harsh sulfates, it uses plant-derived cleansers and a unique protein complex to rebuild hair bonds from the inside out.',
     price: 399,
-    image: 'https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=800',
+    image: botanicalImg,
     variants: ['250ml', '500ml'],
     ingredients: ['Quinoa Protein', 'Coconut Oil', 'Green Tea Extract', 'Panthenol'],
     howToUse: 'Massage into wet hair, lather, and rinse thoroughly. Follow with conditioner.',
@@ -63,7 +73,7 @@ export const PRODUCTS: Product[] = [
     description: 'Gently cleanses and brightens skin tone with natural extracts.',
     fullDescription: 'Wake up your skin with a burst of Vitamin C. This refreshing cleanser removes impurities and excess oil while targeting dullness and uneven skin tone. Natural fruit enzymes provide a gentle exfoliation for a healthy-looking glow.',
     price: 299,
-    image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=800',
+    image: vitaminImg,
     variants: ['100ml', '200ml'],
     ingredients: ['Vitamin C', 'Papaya Enzyme', 'Licorice Root', 'Orange Peel Oil'],
     howToUse: 'Lather a small amount in wet hands and massage onto face. Rinse with lukewarm water.',
@@ -76,7 +86,7 @@ export const PRODUCTS: Product[] = [
     description: 'A potent blend of essential oils to restore skin overnight.',
     fullDescription: 'Transform your skin while you sleep. Our Midnight Recovery Face Oil is a luxurious blend of botanical oils that mimic the skin\'s natural lipids. It works with your skin\'s nightly recovery process to reveal a smoother, more radiant complexion by morning.',
     price: 899,
-    image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800',
+    image: midnightImg,
     variants: ['Standard 30ml'],
     ingredients: ['Rosehip Oil', 'Squalane', 'Lavender Oil', 'Evening Primrose Oil'],
     howToUse: 'Apply 2-3 drops to clean skin before your moisturizer at night.',
@@ -102,7 +112,7 @@ export const PRODUCTS: Product[] = [
     description: 'Deeply cleanses pores and removes impurities for clear skin.',
     fullDescription: 'Draw out toxins and impurities with the power of Activated Charcoal. This deep-cleansing mask acts like a magnet for dirt and oil, leaving your pores refined and your skin feeling incredibly clean and smooth.',
     price: 450,
-    image: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&q=80&w=800',
+    image: maskImg,
     variants: ['Single Pack', 'Value Pack'],
     ingredients: ['Activated Charcoal', 'Kaolin Clay', 'Tea Tree Oil', 'Salicylic Acid'],
     howToUse: 'Apply an even layer to clean skin. Leave for 10-15 minutes until dry. Rinse with warm water.',
@@ -128,7 +138,7 @@ export const PRODUCTS: Product[] = [
     description: 'Effortless beachy waves with volume and a matte finish.',
     fullDescription: 'Get that just-off-the-beach look any day of the year. Our Sea Salt Spray adds volume, texture, and a light hold without the crunch. Infused with seaweed extract to keep hair hydrated.',
     price: 425,
-    image: 'https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&q=80&w=800',
+    image: seasaltImg,
     variants: ['150ml'],
     ingredients: ['Dead Sea Salt', 'Seaweed Extract', 'Aloe Vera', 'Magnesium Sulfate'],
     howToUse: 'Spray onto damp or dry hair. Scrunch with hands and air dry or blow dry with a diffuser.',
@@ -141,7 +151,7 @@ export const PRODUCTS: Product[] = [
     description: 'Plant-based serum to target fine lines and wrinkles.',
     fullDescription: 'All the benefits of retinol without the irritation. Bakuchiol is a natural, plant-derived alternative that helps smooth fine lines, improve skin texture, and boost collagen production. Safe for sensitive skin and daytime use.',
     price: 799,
-    image: 'https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=800',
+    image: retinolImg,
     variants: ['30ml'],
     ingredients: ['Bakuchiol', 'Squalane', 'Rosehip Oil', 'Vitamin E'],
     howToUse: 'Apply 3-4 drops to clean skin morning or night. Follow with moisturizer.',
@@ -167,7 +177,7 @@ export const PRODUCTS: Product[] = [
     description: 'Instant cooling relief for sun-exposed or irritated skin.',
     fullDescription: 'Calm and cool your skin after a day in the sun. Our pure Aloe Vera gel is enriched with Cucumber extract and Peppermint oil to provide immediate relief from redness and heat while preventing peeling.',
     price: 275,
-    image: 'https://images.unsplash.com/photo-1556227702-d1e4e7b5c232?auto=format&fit=crop&q=80&w=800',
+    image: aloeImg,
     variants: ['150ml', '300ml'],
     ingredients: ['Aloe Vera Juice', 'Cucumber Extract', 'Peppermint Oil', 'Panthenol'],
     howToUse: 'Apply generously to affected areas as needed.',
